@@ -76,3 +76,21 @@ Språkväxling SV | EN är tillagd. Svenska är standard. `?lang=en` öppnar sid
 Den första språkversionen översatte bara strängar som råkade matcha ordlistan.
 Den här versionen innehåller en komplettare översättning av säljsidan, dynamiskt genererade modellkort,
 kontaktformulär och juridiska sidor. `?lang=en` öppnar direkt på engelska.
+
+
+## Fast valutaväljare
+Säljsidan har nu en separat valutaväljare: SEK | EUR | USD.
+
+Standard:
+- Svenska: SEK
+- Engelska: USD
+
+Valet sparas i webbläsaren. Priserna är fasta, avrundade internationella priser och följer inte daglig växelkurs.
+
+Nuvarande prisnivåer:
+- Hemsida: 5 900 kr / €549 / $599
+- Drift: 399 kr/mån / €39/month / $39/month
+- Bokningsintegration / extra sida / text: 750 kr / €69 / $79
+- Bildredigering: 250 kr/bild / €25/image / $29/image
+- Enkel logotyp: 995 kr / €89 / $99
+- Logopaket: 1 495 kr / €139 / $149
