@@ -27,3 +27,13 @@ I `config.js` kan du ändra:
 
 ## Publicering
 VS Code → GitHub → Netlify, precis som med demosajterna.
+
+
+## v2.3
+- Priser visas exkl. moms
+- Hemsidans omfattning är tydligare avgränsad
+- 1 ändringsrunda ingår
+- Egen drift omformulerad utan löftet "0 kr/mån"
+- Drift & underhåll inkluderar upp till 30 min mindre ändringar per månad
+- Tillval har tydligare startpriser
+- Större designändringar offereras separat
