@@ -116,3 +116,11 @@ Besökaren kan alltid välja språk manuellt i språklistan. Det valet sparas i 
 
 Valutan är fortfarande helt separat och manuellt valbar: SEK | EUR | USD.
 Svenska får SEK som första standardval. Övriga språk får USD som första standardval om besökaren inte redan valt valuta.
+
+
+## Full translation correction
+The previous version used English as a fallback for many untranslated phrases, which caused mixed-language pages.
+This version fully reviews the main sales page in:
+Swedish, English, Danish, German, Spanish, French, Italian and Portuguese.
+
+The translation engine now also handles dynamically generated model cards, not only text already present in the HTML.

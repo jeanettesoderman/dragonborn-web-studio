@@ -12,8 +12,8 @@ function renderModels() {
         <h3>${model.name}</h3>
         <p>${model.description}</p>
         <div class="model-actions">
-          <a class="demo-link" href="${model.url}${window.DRAGONBORN_LANG === "en" ? "?lang=en" : ""}" target="_blank" rel="noopener">${window.DRAGONBORN_LANG === "en" ? "Open live demo" : "Öppna live-demo"}</a>
-          <a class="btn btn-small" href="#kontakt">${window.DRAGONBORN_LANG === "en" ? "Choose this design" : "Välj modellen"}</a>
+          <a class="demo-link" href="${model.url}${window.DRAGONBORN_LANG === "en" ? "?lang=en" : ""}" target="_blank" rel="noopener">${window.DBWS_TR ? window.DBWS_TR("Öppna live-demo") : "Öppna live-demo"}</a>
+          <a class="btn btn-small" href="#kontakt">${window.DBWS_TR ? window.DBWS_TR("Välj modellen") : "Välj modellen"}</a>
         </div>
       </div>
     </article>
