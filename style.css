@@ -196,3 +196,26 @@ input,textarea,select{width:100%;margin-top:7px;padding:13px 14px;background:#ff
 @media(max-width:900px){.lang-switch{margin-left:10px}}
 .legal-card>.lang-switch{position:absolute;top:24px;right:28px}
 .legal-card{position:relative}
+
+
+/* Header alignment refinement */
+@media (min-width: 901px){
+  .nav-wrap{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    align-items:center;
+    column-gap:28px;
+  }
+
+  .nav-wrap > nav,
+  .nav-wrap .main-nav{
+    justify-self:center;
+    margin-left:0;
+    margin-right:0;
+  }
+
+  .lang-switch{
+    justify-self:end;
+    margin-left:0;
+  }
+}
