@@ -36,12 +36,29 @@ toggle.addEventListener("click", () => {
 });
 nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
 
-function handleDemoForm(event) {
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  document.getElementById("form-status").textContent =
-    "Demoformulär. Här kopplar vi in Formspree, Netlify Forms eller annan mottagning innan sidan lanseras.";
-  event.target.reset();
-  return false;
-}
+  formStatus.textContent = "Skickar...";
+
+  try {
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: new FormData(contactForm),
+      headers: { "Accept": "application/json" }
+    });
+
+    if (response.ok) {
+      formStatus.textContent = "Tack! Din förfrågan har skickats.";
+      contactForm.reset();
+    } else {
+      formStatus.textContent = "Meddelandet kunde inte skickas. Försök igen.";
+    }
+  } catch (error) {
+    formStatus.textContent = "Meddelandet kunde inte skickas. Försök igen.";
+  }
+});
 
 applyConfig();

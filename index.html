@@ -251,14 +251,14 @@
       <p>Skicka vilken modell du är intresserad av och lite kort information om ditt företag, så kan vi ta nästa steg därifrån.</p>
     </div>
 
-    <form class="contact-form" onsubmit="return handleDemoForm(event)">
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xppaoygz" method="POST">
       <div class="form-row">
-        <label>Namn<input type="text" required></label>
-        <label>Företag<input type="text"></label>
+        <label>Namn<input type="text" name="namn" required></label>
+        <label>Företag<input type="text" name="foretag"></label>
       </div>
-      <label>E-post<input type="email" required></label>
+      <label>E-post<input type="email" name="email" required></label>
       <label>Vilken modell?
-        <select>
+        <select name="modell">
           <option>Lumière Beauty</option>
           <option>Nord Måleri</option>
           <option>Obsidian Detailing</option>
@@ -266,9 +266,9 @@
           <option>Jag vet inte ännu</option>
         </select>
       </label>
-      <label>Meddelande<textarea rows="5" placeholder="Berätta gärna lite om företaget och vad du behöver."></textarea></label>
+      <label>Meddelande<textarea name="meddelande" rows="5" placeholder="Berätta gärna lite om företaget och vad du behöver." required></textarea></label>
       <button class="btn btn-light" type="submit">Skicka förfrågan</button>
-      <p id="form-status" class="form-status"></p>
+      <p id="form-status" class="form-status" aria-live="polite"></p>
     </form>
   </div>
 </section>
