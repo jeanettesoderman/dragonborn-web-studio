@@ -187,3 +187,12 @@ input,textarea,select{width:100%;margin-top:7px;padding:13px 14px;background:#ff
 @media(max-width:700px){
   .legal-card{padding:28px 22px}
 }
+
+
+.lang-switch{display:flex;align-items:center;gap:6px;margin-left:auto;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.06em;white-space:nowrap}
+.lang-switch button{appearance:none;border:0;background:transparent;color:inherit;opacity:.55;font:inherit;cursor:pointer;padding:6px 3px}
+.lang-switch button.active{opacity:1;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.lang-switch span{opacity:.35}
+@media(max-width:900px){.lang-switch{margin-left:10px}}
+.legal-card>.lang-switch{position:absolute;top:24px;right:28px}
+.legal-card{position:relative}

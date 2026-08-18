@@ -66,3 +66,7 @@ VIKTIGT:
 Skatteverket anger att uppdrag åt andra som tas då och då redovisas som tjänsteinkomst, inte hobby.
 För en företagskund som betalar en fysisk person utan F-skatt kan skatteavdrag och arbetsgivaravgifter bli aktuella.
 Kontrollera därför betalningsupplägget innan första riktiga B2B-beställningen.
+
+
+## Svenska / English
+Språkväxling SV | EN är tillagd. Svenska är standard. `?lang=en` öppnar sidan direkt på engelska. Valet sparas i webbläsaren.
