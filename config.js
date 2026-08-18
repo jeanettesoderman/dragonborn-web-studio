@@ -1,7 +1,7 @@
 window.SALES_CONFIG = {
   brand: "Dragonborn Web Studio",
   sitePrice: "5 900 kr",
-  hostingPrice: "399 kr/mån exkl. moms",
+  hostingPrice: "399 kr/mån",
 
   models: [
     {

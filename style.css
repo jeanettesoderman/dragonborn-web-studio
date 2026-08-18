@@ -13,12 +13,12 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"DM Sans",sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+body{font-family:Arial, Helvetica, sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
 a{text-decoration:none;color:inherit}
 button,input,textarea,select{font:inherit}
 .container{width:min(1180px,calc(100% - 40px));margin:auto}
 .section{padding:110px 0}
-h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.08}
+h1,h2,h3{font-family:Georgia, "Times New Roman", serif;line-height:1.08}
 h1{font-size:clamp(3.8rem,7vw,6.8rem);letter-spacing:-.04em}
 h2{font-size:clamp(2.7rem,5vw,4.6rem);letter-spacing:-.03em}
 h3{font-size:1.6rem}
@@ -27,7 +27,7 @@ p{color:var(--muted)}
 .eyebrow.light{color:#dbc09d}
 .site-header{position:sticky;top:0;z-index:1000;background:rgba(247,244,239,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav-wrap{min-height:80px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-family:"Playfair Display",serif;font-size:1.45rem;font-weight:700}
+.brand{font-family:Georgia, "Times New Roman", serif;font-size:1.45rem;font-weight:700}
 .main-nav{display:flex;align-items:center;gap:26px;font-size:.9rem}
 .menu-toggle{display:none;background:none;border:0}.menu-toggle span{display:block;width:25px;height:2px;background:var(--ink);margin:5px 0}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 25px;background:var(--dark);border:1px solid var(--dark);color:#fff;font-weight:700;font-size:.9rem;transition:.2s}
@@ -86,12 +86,12 @@ input,textarea,select{width:100%;margin-top:7px;padding:13px 14px;background:#ff
   line-height:1.05;
 }
 .brand-lockup strong{
-  font-family:"Playfair Display",serif;
+  font-family:Georgia, "Times New Roman", serif;
   font-size:1.22rem;
 }
 .brand-lockup small{
   margin-top:5px;
-  font-family:"DM Sans",sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-size:.60rem;
   letter-spacing:.13em;
   text-transform:uppercase;
@@ -139,4 +139,51 @@ input,textarea,select{width:100%;margin-top:7px;padding:13px 14px;background:#ff
   .dragonborn-copy{
     text-align:center;
   }
+}
+
+
+.legal-main{
+  padding:120px 0 80px;
+  background:#fbfaf7;
+}
+.legal-card{
+  max-width:900px;
+  margin:0 auto;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:48px;
+}
+.legal-card h1{
+  margin-bottom:12px;
+}
+.legal-card h2{
+  margin-top:34px;
+  margin-bottom:10px;
+  font-size:1.35rem;
+}
+.legal-card p,
+.legal-card li{
+  color:var(--muted);
+  line-height:1.75;
+}
+.legal-card ul{
+  padding-left:22px;
+}
+.legal-meta{
+  margin-bottom:28px;
+}
+.legal-warning{
+  padding:18px 20px;
+  margin:24px 0;
+  border:1px solid #c8b89b;
+  border-radius:14px;
+  background:#faf6ee;
+}
+.legal-back{
+  display:inline-block;
+  margin-bottom:26px;
+}
+@media(max-width:700px){
+  .legal-card{padding:28px 22px}
 }
