@@ -6,7 +6,7 @@
   function defaultCurrency() {
     const saved = localStorage.getItem("dragonbornCurrency");
     if (saved && ["SEK","EUR","USD"].includes(saved)) return saved;
-    return window.DRAGONBORN_LANG === "en" ? "USD" : "SEK";
+    return window.DRAGONBORN_LANG === "sv" ? "SEK" : "USD";
   }
 
   let currency = params.get("currency");

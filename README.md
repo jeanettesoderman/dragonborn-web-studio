@@ -94,3 +94,25 @@ Nuvarande prisnivåer:
 - Bildredigering: 250 kr/bild / €25/image / $29/image
 - Enkel logotyp: 995 kr / €89 / $99
 - Logopaket: 1 495 kr / €139 / $149
+
+
+## Automatisk språkdetektering
+Sidan läser webbläsarens föredragna språk första gången besökaren kommer in.
+Om ett av de språk som stöds hittas används det automatiskt. Annars används engelska.
+
+Språk som stöds:
+- Svenska
+- English
+- Español
+- Deutsch
+- Français
+- Português
+- Italiano
+- Nederlands
+- Dansk
+- Norsk
+
+Besökaren kan alltid välja språk manuellt i språklistan. Det valet sparas i webbläsaren och går före automatisk detektering.
+
+Valutan är fortfarande helt separat och manuellt valbar: SEK | EUR | USD.
+Svenska får SEK som första standardval. Övriga språk får USD som första standardval om besökaren inte redan valt valuta.

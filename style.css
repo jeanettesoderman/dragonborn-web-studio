@@ -308,3 +308,39 @@ input,textarea,select{width:100%;margin-top:7px;padding:13px 14px;background:#ff
     margin-top:4px;
   }
 }
+
+
+/* Multi-language selector */
+.language-select-wrap{
+  grid-column:3;
+  grid-row:1;
+  justify-self:end;
+  align-self:start;
+  margin:0;
+}
+.language-select{
+  border:0;
+  border-bottom:1px solid rgba(20,20,20,.25);
+  background:transparent;
+  color:inherit;
+  font:600 11px/1.2 Arial,Helvetica,sans-serif;
+  letter-spacing:.02em;
+  padding:5px 20px 5px 4px;
+  cursor:pointer;
+}
+@media(min-width:901px){
+  .nav-wrap{
+    grid-template-columns:minmax(280px,1fr) auto minmax(280px,1fr) !important;
+  }
+  .currency-switch{
+    grid-column:3 !important;
+    grid-row:1 !important;
+    justify-self:end !important;
+    transform:translateY(25px) !important;
+  }
+}
+@media(max-width:900px){
+  .language-select-wrap{
+    margin-left:auto;
+  }
+}
