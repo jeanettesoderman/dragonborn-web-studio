@@ -12,8 +12,8 @@ function renderModels() {
         <h3>${model.name}</h3>
         <p>${model.description}</p>
         <div class="model-actions">
-          <a class="demo-link" href="${model.url}" target="_blank" rel="noopener">Öppna live-demo</a>
-          <a class="btn btn-small" href="#kontakt">Välj modellen</a>
+          <a class="demo-link" href="${model.url}${window.DRAGONBORN_LANG === "en" ? "?lang=en" : ""}" target="_blank" rel="noopener">${window.DRAGONBORN_LANG === "en" ? "Open live demo" : "Öppna live-demo"}</a>
+          <a class="btn btn-small" href="#kontakt">${window.DRAGONBORN_LANG === "en" ? "Choose this design" : "Välj modellen"}</a>
         </div>
       </div>
     </article>
@@ -41,7 +41,7 @@ const formStatus = document.getElementById("form-status");
 
 contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  formStatus.textContent = "Skickar...";
+  formStatus.textContent = window.DRAGONBORN_LANG === "en" ? "Sending..." : "Skickar...";
 
   try {
     const response = await fetch(contactForm.action, {
@@ -51,13 +51,13 @@ contactForm.addEventListener("submit", async (event) => {
     });
 
     if (response.ok) {
-      formStatus.textContent = "Tack! Din förfrågan har skickats.";
+      formStatus.textContent = window.DRAGONBORN_LANG === "en" ? "Thank you! Your inquiry has been sent." : "Tack! Din förfrågan har skickats.";
       contactForm.reset();
     } else {
-      formStatus.textContent = "Meddelandet kunde inte skickas. Försök igen.";
+      formStatus.textContent = window.DRAGONBORN_LANG === "en" ? "The message could not be sent. Please try again." : "Meddelandet kunde inte skickas. Försök igen.";
     }
   } catch (error) {
-    formStatus.textContent = "Meddelandet kunde inte skickas. Försök igen.";
+    formStatus.textContent = window.DRAGONBORN_LANG === "en" ? "The message could not be sent. Please try again." : "Meddelandet kunde inte skickas. Försök igen.";
   }
 });
 

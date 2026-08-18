@@ -70,3 +70,9 @@ Kontrollera därför betalningsupplägget innan första riktiga B2B-beställning
 
 ## Svenska / English
 Språkväxling SV | EN är tillagd. Svenska är standard. `?lang=en` öppnar sidan direkt på engelska. Valet sparas i webbläsaren.
+
+
+## SV/EN FIX
+Den första språkversionen översatte bara strängar som råkade matcha ordlistan.
+Den här versionen innehåller en komplettare översättning av säljsidan, dynamiskt genererade modellkort,
+kontaktformulär och juridiska sidor. `?lang=en` öppnar direkt på engelska.
