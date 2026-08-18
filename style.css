@@ -255,3 +255,56 @@ input,textarea,select{width:100%;margin-top:7px;padding:13px 14px;background:#ff
     font-size:10px;
   }
 }
+
+
+/* Final header layout: logo left, menu centered, language/currency stacked right */
+@media (min-width: 901px){
+  .nav-wrap{
+    display:grid !important;
+    grid-template-columns:minmax(250px, 1fr) auto minmax(250px, 1fr);
+    align-items:center;
+    column-gap:28px;
+  }
+
+  .brand,
+  .brand-lockup{
+    justify-self:start;
+  }
+
+  .nav-wrap > nav,
+  .nav-wrap .main-nav{
+    justify-self:center !important;
+    margin:0 !important;
+  }
+
+  .lang-switch{
+    justify-self:end;
+    margin-left:0 !important;
+    align-self:start;
+  }
+
+  .currency-switch{
+    grid-column:3;
+    justify-self:end;
+    margin-left:0 !important;
+    margin-top:2px;
+  }
+
+  /* Keep language and currency together on the right */
+  .nav-wrap .lang-switch{
+    grid-column:3;
+    grid-row:1;
+  }
+
+  .nav-wrap .currency-switch{
+    grid-column:3;
+    grid-row:1;
+    transform:translateY(22px);
+  }
+}
+
+@media (max-width: 900px){
+  .currency-switch{
+    margin-top:4px;
+  }
+}
